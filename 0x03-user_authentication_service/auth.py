@@ -93,4 +93,4 @@ class Auth:
         Returns:
             str: String representation of the new UUID.
         """
-        return str(uuid.uuid4())
+        return uuid.uuid4().hex
