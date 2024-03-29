@@ -86,11 +86,11 @@ class Auth:
         except NoResultFound:
             return False
 
-    def _generate_uuid() -> str:
+def _generate_uuid() -> str:
         """
         Generates a new UUID.
 
         Returns:
             str: String representation of the new UUID.
         """
-        return uuid.uuid4().hex
+        return str(uuid.uuid4())
